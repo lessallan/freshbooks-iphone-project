@@ -1,5 +1,5 @@
 build
-FreshbooksTimer.xcodeproj/*.mode1v2
+FreshbooksTimer.xcodeproj/*.mode1v3
 FreshbooksTimer.xcodeproj/*.pbxuser
 .DS_Store
 Reachability.h
