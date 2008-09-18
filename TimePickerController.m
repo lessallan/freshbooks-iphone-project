@@ -63,10 +63,13 @@
 }
  */
 
-/*
- If you need to do additional setup after loading the view, override viewDidLoad.
 - (void)viewDidLoad {
+	// There's something wrong with the latest interface builder and this component.  
+	// Creating it dynamically.
+	timePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0.0, 44.0, 320.0, 216.0)];
+	timePicker.datePickerMode = UIDatePickerModeCountDownTimer;
+	timePicker.countDownDuration = 0;
+	[self.view addSubview:timePicker];
 }
- */
 
 @end

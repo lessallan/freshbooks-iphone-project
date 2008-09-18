@@ -23,7 +23,6 @@
 		79017AB10E5E276D000810B9 /* start_stop_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017AB00E5E276D000810B9 /* start_stop_button.png */; };
 		79017AC70E5E2CC5000810B9 /* reset_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017AC60E5E2CC5000810B9 /* reset_button.png */; };
 		79017AE10E5E2F83000810B9 /* submit_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017AE00E5E2F83000810B9 /* submit_button.png */; };
-		79017B2E0E5E456A000810B9 /* TimePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79017B2D0E5E456A000810B9 /* TimePicker.xib */; };
 		79017B320E5E487E000810B9 /* TimePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79017B310E5E487E000810B9 /* TimePickerController.m */; };
 		79017C2E0E5E689A000810B9 /* project_button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017C2D0E5E689A000810B9 /* project_button_background.png */; };
 		79017D150E5E852E000810B9 /* queue_view_top_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017D140E5E852E000810B9 /* queue_view_top_background.png */; };
@@ -70,6 +69,7 @@
 		798516D50E5EE57400415B35 /* icon_log.png in Resources */ = {isa = PBXBuildFile; fileRef = 798516D40E5EE57400415B35 /* icon_log.png */; };
 		798517050E5EF69800415B35 /* icon_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 798517040E5EF69800415B35 /* icon_error.png */; };
 		798517080E5EF71A00415B35 /* icon_edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 798517070E5EF71A00415B35 /* icon_edit.png */; };
+		79A726470E8238F800A7C2C8 /* TimePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A726460E8238F800A7C2C8 /* TimePicker.xib */; };
 		79B8865B0E3EC46600EA9BF8 /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79B8865A0E3EC46600EA9BF8 /* dist.plist */; };
 		79C23AF50E6032E5001D6789 /* icon_pending.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C23AF40E6032E5001D6789 /* icon_pending.png */; };
 		79C23B060E603430001D6789 /* icon_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C23B050E603430001D6789 /* icon_settings.png */; };
@@ -106,7 +106,6 @@
 		79017AB00E5E276D000810B9 /* start_stop_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_stop_button.png; path = images/start_stop_button.png; sourceTree = "<group>"; };
 		79017AC60E5E2CC5000810B9 /* reset_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset_button.png; path = images/reset_button.png; sourceTree = "<group>"; };
 		79017AE00E5E2F83000810B9 /* submit_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = submit_button.png; path = images/submit_button.png; sourceTree = "<group>"; };
-		79017B2D0E5E456A000810B9 /* TimePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePicker.xib; sourceTree = "<group>"; };
 		79017B300E5E487E000810B9 /* TimePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePickerController.h; sourceTree = "<group>"; };
 		79017B310E5E487E000810B9 /* TimePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerController.m; sourceTree = "<group>"; };
 		79017C2D0E5E689A000810B9 /* project_button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = project_button_background.png; path = images/project_button_background.png; sourceTree = "<group>"; };
@@ -173,6 +172,7 @@
 		798516D40E5EE57400415B35 /* icon_log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_log.png; sourceTree = "<group>"; };
 		798517040E5EF69800415B35 /* icon_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_error.png; path = images/icon_error.png; sourceTree = "<group>"; };
 		798517070E5EF71A00415B35 /* icon_edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_edit.png; sourceTree = "<group>"; };
+		79A726460E8238F800A7C2C8 /* TimePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePicker.xib; sourceTree = "<group>"; };
 		79B8865A0E3EC46600EA9BF8 /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
 		79C23AF40E6032E5001D6789 /* icon_pending.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pending.png; sourceTree = "<group>"; };
 		79C23B050E603430001D6789 /* icon_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_settings.png; path = images/icon_settings.png; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 				79B8865A0E3EC46600EA9BF8 /* dist.plist */,
 				797626A60E51CC8E00872736 /* QueueView.xib */,
 				797628E90E55139D00872736 /* EditNoteView.xib */,
-				79017B2D0E5E456A000810B9 /* TimePicker.xib */,
+				79A726460E8238F800A7C2C8 /* TimePicker.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -456,7 +456,6 @@
 				79017AB10E5E276D000810B9 /* start_stop_button.png in Resources */,
 				79017AC70E5E2CC5000810B9 /* reset_button.png in Resources */,
 				79017AE10E5E2F83000810B9 /* submit_button.png in Resources */,
-				79017B2E0E5E456A000810B9 /* TimePicker.xib in Resources */,
 				79017C2E0E5E689A000810B9 /* project_button_background.png in Resources */,
 				79017D150E5E852E000810B9 /* queue_view_top_background.png in Resources */,
 				79017D180E5E85DF000810B9 /* queue_view_sync_button.png in Resources */,
@@ -480,6 +479,7 @@
 				79C23B0A0E60357A001D6789 /* icon_edit_disabled.png in Resources */,
 				791AFC5D0E683263005DBD52 /* settings_background.png in Resources */,
 				79F1DA0A0E7F45610090F091 /* Default.png in Resources */,
+				79A726470E8238F800A7C2C8 /* TimePicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +565,7 @@
 				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_PREPROCESS = YES;
 				PREBINDING = NO;
-				PRODUCT_NAME = "Punch Card";
+				PRODUCT_NAME = FreshBooks;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7FAE5FE8-2B98-4FC1-A48F-C546EDCC5CB8";
 				SDKROOT = iphoneos2.0;
 			};
@@ -600,7 +600,7 @@
 				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_PREPROCESS = YES;
 				PREBINDING = NO;
-				PRODUCT_NAME = "Punch Card";
+				PRODUCT_NAME = FreshBooks;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "48367542-E842-41A1-B5D6-9E8C2852DA6A";
 				SDKROOT = iphoneos2.0;
 			};
@@ -635,7 +635,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
-				PRODUCT_NAME = "Punch Card";
+				PRODUCT_NAME = FreshBooks;
 				SDKROOT = iphoneos2.0;
 			};
 			name = Debug;
@@ -651,7 +651,7 @@
 				GENERATE_PKGINFO_FILE = NO;
 				INFOPLIST_PREPROCESS = YES;
 				PREBINDING = NO;
-				PRODUCT_NAME = "Punch Card";
+				PRODUCT_NAME = FreshBooks;
 				SDKROOT = iphoneos2.0;
 			};
 			name = Release;

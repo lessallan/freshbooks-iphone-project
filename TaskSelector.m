@@ -101,11 +101,21 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-	return [[self.selectedProject valueForKey:@"tasks"] count];
+	if([[self.selectedProject valueForKey:@"tasks"] count]){
+		return [[self.selectedProject valueForKey:@"tasks"] count];
+	}
+	else{
+		return 1;
+	}
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-	return [[[self.selectedProject valueForKey:@"tasks"] objectAtIndex:row] valueForKey:@"name"];
+	if([[self.selectedProject valueForKey:@"tasks"] count]){
+		return [[[self.selectedProject valueForKey:@"tasks"] objectAtIndex:row] valueForKey:@"name"];
+	}
+	else{
+		return @"This project has no tasks.";
+	}
 }
 
 - (void)clearSelectedTask {
@@ -114,9 +124,16 @@
 }
 
 - (void)setSelectedTaskByIndex:(NSInteger)row {
-	self.selectedTask = [[self.selectedProject valueForKey:@"tasks"] objectAtIndex:row];
-	[mainViewController selectedTaskDidUpdate:selectedTask];
-	[taskPicker selectRow:row inComponent:0 animated:NO];
+	if([[self.selectedProject valueForKey:@"tasks"] count] > 0){
+		self.selectedTask = [[self.selectedProject valueForKey:@"tasks"] objectAtIndex:row];
+		[mainViewController selectedTaskDidUpdate:selectedTask];
+		[taskPicker selectRow:row inComponent:0 animated:NO];
+	}
+	else {
+		[mainViewController.rootViewController showSettingsView];
+		[[[[UIAlertView alloc] initWithTitle:@"Project Has No Tasks" message:@"Please enable tasks for this project, then click Refresh Data." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] autorelease] show];
+		[self hide];
+	}
 }
 
 - (void)setSelectedTaskById:(NSString *)tid {
