@@ -76,11 +76,17 @@
 }
 
 - (void) show {
-	[UIButton beginAnimations:nil context:nil];
-	self.view.frame = CGRectMake(0.0, 200.0, self.view.frame.size.width, self.view.frame.size.height);
-	modalBackdrop.alpha = 0.5;
-	[UIButton commitAnimations];
-	[mainViewController.rootViewController hideTabBar];
+	if([[self.selectedProject valueForKey:@"tasks"] count] > 0){
+		[UIButton beginAnimations:nil context:nil];
+		self.view.frame = CGRectMake(0.0, 200.0, self.view.frame.size.width, self.view.frame.size.height);
+		modalBackdrop.alpha = 0.5;
+		[UIButton commitAnimations];
+		[mainViewController.rootViewController hideTabBar];
+	}
+	else{
+		[mainViewController.rootViewController showSettingsView];
+		[[[[UIAlertView alloc] initWithTitle:@"Project Has No Tasks" message:@"Please enable tasks for this project, then tap Refresh Data." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] autorelease] show];
+	}
 }
 
 - (IBAction) doneButtonClicked:(id)sender {

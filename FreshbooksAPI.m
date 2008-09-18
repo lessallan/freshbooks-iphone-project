@@ -112,9 +112,9 @@ static FreshbooksAPI *sharedInstance = nil;
 }
 
 - (NSString *) xmlEscape:(NSString *) inputString {
+	inputString = [inputString stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
 	inputString = [inputString stringByReplacingOccurrencesOfString:@"<" withString:@"&lt;"];
 	inputString = [inputString stringByReplacingOccurrencesOfString:@">" withString:@"&gt;"];
-	inputString = [inputString stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
 	return inputString;
 }
 
