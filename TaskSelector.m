@@ -131,7 +131,7 @@
 	}
 	else {
 		[mainViewController.rootViewController showSettingsView];
-		[[[[UIAlertView alloc] initWithTitle:@"Project Has No Tasks" message:@"Please enable tasks for this project, then click Refresh Data." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] autorelease] show];
+		[[[[UIAlertView alloc] initWithTitle:@"Project Has No Tasks" message:@"Please enable tasks for this project, then tap Refresh Data." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] autorelease] show];
 		[self hide];
 	}
 }

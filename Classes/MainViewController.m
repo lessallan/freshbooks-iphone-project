@@ -264,6 +264,10 @@
 	if([[[FreshbooksAPI sharedInstance] projectData] count] > 0){
 		[projectSelector show];
 	}
+	else if([configData valueForKeyPath:@"authentication.isValid"]){
+		[rootViewController showSettingsView];
+		[[[[UIAlertView alloc] initWithTitle:@"No Projects Exist" message:@"Please create a project, then tap Refresh Data." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] autorelease] show];
+	}
 	else{
 		[rootViewController showSettingsView];
 		[[[[UIAlertView alloc] initWithTitle:@"Project Data is not Loaded" message:@"Please update your authentication information." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] autorelease] show];

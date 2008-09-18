@@ -99,6 +99,7 @@
 		[self refreshProjectData:nil];
 	} else {
 		refreshButton.enabled = false;
+		[configData setValue:nil forKeyPath:@"authentication.isValid"];
 	}
 }
 
