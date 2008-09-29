@@ -589,6 +589,38 @@
 			};
 			name = "Ad Hoc Release";
 		};
+		7910918E0E918F4500D6FD92 /* App Store Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 2ndSite Inc";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = NO;
+				INFOPLIST_PREPROCESS = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = FreshBooks;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1F96FDE0-8CDD-4858-A21D-80377769D1ED";
+				SDKROOT = iphoneos2.0;
+			};
+			name = "App Store Release";
+		};
+		7910918F0E918F4500D6FD92 /* App Store Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FreshbooksTimer_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = FreshBooks;
+			};
+			name = "App Store Release";
+		};
 		799E90650E40482E00BACABC /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -665,6 +697,7 @@
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 				799E90660E40482E00BACABC /* Distribution */,
+				7910918F0E918F4500D6FD92 /* App Store Release */,
 				790FF70B0E3EAA82001E5C16 /* Ad Hoc Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -676,6 +709,7 @@
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
 				799E90650E40482E00BACABC /* Distribution */,
+				7910918E0E918F4500D6FD92 /* App Store Release */,
 				790FF70A0E3EAA82001E5C16 /* Ad Hoc Release */,
 			);
 			defaultConfigurationIsVisible = 0;
