@@ -19,6 +19,7 @@
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233AF0DB2D0DB0083E9F9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AB0DB2D0DB0083E9F9 /* RootViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
+		3CA55CEA0EAE784400B18947 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA55CE90EAE784400B18947 /* Reachability.m */; };
 		79017AAD0E5E2519000810B9 /* main_view_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017AAC0E5E2519000810B9 /* main_view_gradient.png */; };
 		79017AB10E5E276D000810B9 /* start_stop_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017AB00E5E276D000810B9 /* start_stop_button.png */; };
 		79017AC70E5E2CC5000810B9 /* reset_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 79017AC60E5E2CC5000810B9 /* reset_button.png */; };
@@ -54,7 +55,6 @@
 		7951D4CD0E397523001BF27D /* ProjectSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7951D4CC0E397523001BF27D /* ProjectSelector.m */; };
 		7951D4EC0E397913001BF27D /* ProjectSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7951D4EB0E397913001BF27D /* ProjectSelector.xib */; };
 		796ADE0F0E5ABDEF006C8C9B /* ProjectDataLoaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 796ADE0E0E5ABDEF006C8C9B /* ProjectDataLoaderOperation.m */; };
-		796ADEF70E5ACCFD006C8C9B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 796ADEF50E5ACCFD006C8C9B /* Reachability.m */; };
 		796ADF060E5ACEA3006C8C9B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796ADF050E5ACEA3006C8C9B /* SystemConfiguration.framework */; };
 		797626740E51BB3C00872736 /* SubmissionQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 797626730E51BB3C00872736 /* SubmissionQueue.m */; };
 		797626A10E51CC3900872736 /* QueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797626A00E51CC3900872736 /* QueueViewController.m */; };
@@ -102,6 +102,8 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* FreshbooksTimer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshbooksTimer_Prefix.pch; sourceTree = "<group>"; };
+		3CA55CE80EAE784400B18947 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3CA55CE90EAE784400B18947 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		79017AAC0E5E2519000810B9 /* main_view_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_view_gradient.png; path = images/main_view_gradient.png; sourceTree = "<group>"; };
 		79017AB00E5E276D000810B9 /* start_stop_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_stop_button.png; path = images/start_stop_button.png; sourceTree = "<group>"; };
 		79017AC60E5E2CC5000810B9 /* reset_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset_button.png; path = images/reset_button.png; sourceTree = "<group>"; };
@@ -152,8 +154,6 @@
 		7951D4EB0E397913001BF27D /* ProjectSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectSelector.xib; sourceTree = "<group>"; };
 		796ADE0D0E5ABDEF006C8C9B /* ProjectDataLoaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDataLoaderOperation.h; sourceTree = "<group>"; };
 		796ADE0E0E5ABDEF006C8C9B /* ProjectDataLoaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDataLoaderOperation.m; sourceTree = "<group>"; };
-		796ADEF50E5ACCFD006C8C9B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		796ADEF60E5ACCFD006C8C9B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		796ADF050E5ACEA3006C8C9B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
 		797626720E51BB3C00872736 /* SubmissionQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmissionQueue.h; sourceTree = "<group>"; };
 		797626730E51BB3C00872736 /* SubmissionQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmissionQueue.m; sourceTree = "<group>"; };
@@ -345,8 +345,8 @@
 		794F22880E35846000210CCD /* Freshbooks API */ = {
 			isa = PBXGroup;
 			children = (
-				796ADEF50E5ACCFD006C8C9B /* Reachability.m */,
-				796ADEF60E5ACCFD006C8C9B /* Reachability.h */,
+				3CA55CE80EAE784400B18947 /* Reachability.h */,
+				3CA55CE90EAE784400B18947 /* Reachability.m */,
 				794F228A0E35851C00210CCD /* FreshbooksAPI.h */,
 				794F228B0E35851C00210CCD /* FreshbooksAPI.m */,
 				797626720E51BB3C00872736 /* SubmissionQueue.h */,
@@ -513,9 +513,9 @@
 				797628EF0E5513B100872736 /* EditNoteController.m in Sources */,
 				797629010E5514F200872736 /* FullPagePopupViewController.m in Sources */,
 				796ADE0F0E5ABDEF006C8C9B /* ProjectDataLoaderOperation.m in Sources */,
-				796ADEF70E5ACCFD006C8C9B /* Reachability.m in Sources */,
 				79017B320E5E487E000810B9 /* TimePickerController.m in Sources */,
 				79017D6E0E5E8BF5000810B9 /* QueueViewTableCell.m in Sources */,
+				3CA55CEA0EAE784400B18947 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
