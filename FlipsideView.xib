@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.02">
 	<data>
 		<int key="IBDocument.SystemTarget">512</int>
-		<string key="IBDocument.SystemVersion">9E17</string>
-		<string key="IBDocument.InterfaceBuilderVersion">670</string>
-		<string key="IBDocument.AppKitVersion">949.33</string>
+		<string key="IBDocument.SystemVersion">9F33</string>
+		<string key="IBDocument.InterfaceBuilderVersion">672</string>
+		<string key="IBDocument.AppKitVersion">949.34</string>
 		<string key="IBDocument.HIToolboxVersion">352.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="50"/>
+			<integer value="4"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -100,12 +100,12 @@
 					<object class="IBUILabel" id="397755306">
 						<reference key="NSNextResponder" ref="242216480"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{15, 266}, {62, 21}}</string>
+						<string key="NSFrame">{{15, 266}, {144, 21}}</string>
 						<reference key="NSSuperview" ref="242216480"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">API Key</string>
+						<string key="IBUIText">Authentication Token</string>
 						<reference key="IBUIFont" ref="672209158"/>
 						<reference key="IBUITextColor" ref="35967144"/>
 						<nil key="IBUIHighlightedColor"/>
@@ -428,9 +428,9 @@
 							<reference ref="755579"/>
 							<reference ref="652051594"/>
 							<reference ref="227328743"/>
-							<reference ref="397755306"/>
 							<reference ref="574195127"/>
 							<reference ref="291787050"/>
+							<reference ref="397755306"/>
 						</object>
 						<reference key="parent" ref="360949347"/>
 						<string key="objectName">Flipside View</string>
