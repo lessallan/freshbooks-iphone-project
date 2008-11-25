@@ -62,6 +62,7 @@
 		}
 		// Make sure each object is unique.
 		[entry setObject:[NSDate date] forKey:@"submissionKey"];
+		[entry setObject:[NSDate date] forKey:@"submission_time"];
 		[self.queue addObject:entry];
 		[[NSNotificationCenter defaultCenter] postNotificationName:@"Queue Length Changed" object:nil];
 		if(self.currentSubmission == nil){
@@ -100,7 +101,7 @@
 
 	if(self.currentSubmission = [self nextValidEntry]){
 		
-		NSString *formattedDate = [[[NSDate date] description] substringToIndex:10 ];
+		NSString *formattedDate = [[[self.currentSubmission valueForKeyPath:@"submissionKey"] description] substringToIndex:10 ];
 
 		NSString *call = [NSString stringWithFormat: 
 						  @"<?xml version=\"1.0\" encoding=\"utf-8\"?><request method=\"time_entry.create\"><time_entry><project_id>%@</project_id><task_id>%@</task_id><hours>%f</hours><notes><![CDATA[%@]]></notes><date>%@</date></time_entry></request>", 
