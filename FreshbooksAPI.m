@@ -72,6 +72,10 @@ static FreshbooksAPI *sharedInstance = nil;
 	[self loadProjectDataWithError: &err];
 }
 
+- (void) _notify {
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"ProjectDataChanged" object:self];
+}
+
 - (BOOL) loadProjectDataWithError: (NSString **)error {
 	
 	@try{
@@ -98,7 +102,7 @@ static FreshbooksAPI *sharedInstance = nil;
 			[configData setValue:projectData forKey:@"projectData"];
 			[configData setValue:[NSDate date] forKey:@"projectDataDate"];
 			
-			[[NSNotificationCenter defaultCenter] postNotificationName:@"ProjectDataChanged" object:self];
+			[self performSelectorOnMainThread:@selector(_notify) withObject:nil waitUntilDone:NO];
 			return YES;
 		} else {
 			*error = [[[[xmlDoc rootElement] elementsForName:@"error"] objectAtIndex:0] stringValue];

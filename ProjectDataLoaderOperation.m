@@ -40,17 +40,17 @@
 		NSString *errorString;
 		if([[FreshbooksAPI sharedInstance] loadProjectDataWithError:&errorString]){
 			if(self.delegate){
-				[self.delegate projectDataLoaderDidComplete];
+				[self.delegate performSelectorOnMainThread:@selector(projectDataLoaderDidComplete) withObject:nil waitUntilDone:NO];
 			}
 		}
 		else{
 			if(self.delegate){
-				[self.delegate projectDataLoaderDidError:errorString];
+				[self.delegate performSelectorOnMainThread:@selector(projectDataLoaderDidError:) withObject:errorString waitUntilDone:NO];
 			}
 		}
 	}
 	else {
-		[self.delegate projectDataLoaderDidError:@"Network is unavailable."];
+		[self.delegate performSelectorOnMainThread:@selector(projectDataLoaderDidError:) withObject:@"Network is unavailable." waitUntilDone:NO];
 	}
 }
 
